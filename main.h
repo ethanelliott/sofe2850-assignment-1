@@ -5,6 +5,7 @@
 #define MAINCLASS_MACRO
 
 #define START_MAIN_CLASS(_ClassName_) \
+	_ClassName_ * _ClassName_::instance = NULL; \
 	int main() \
 	{ \
 		_ClassName_ *base =  _ClassName_::GetInstance(); \

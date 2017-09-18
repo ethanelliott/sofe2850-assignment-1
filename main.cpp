@@ -33,6 +33,4 @@ class CodeBase {
 		}
 };
 
-CodeBase * CodeBase::instance = NULL;
-
 START_MAIN_CLASS(CodeBase);
