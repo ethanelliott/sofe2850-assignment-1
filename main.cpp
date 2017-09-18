@@ -25,6 +25,7 @@ class Assignment1 {
 	    }//GetInstance
 		int mainRoutine() {
 			cout << "Hello World!" << endl;
+			return 0;
 		}
 }
 
