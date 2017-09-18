@@ -2,24 +2,24 @@
 
 using namespace std;
 
-class Assignment1 {
+class CodeBase {
 	private:
-		//CalculateThing *calcThing;
-		static Assignment1 * instance;
+		Assignment1 * assignment1;
+		static CodeBase * instance;
 
 	public:
-		Assignment1(void) {
-			//calcThing = CalculateThing::GetInstance();
+		CodeBase(void) {
+			assignment1 = Assignment1::GetInstance();
 		}//Constructor
-		~Assignment1(void) {
-			//delete calcThing;
+		~CodeBase(void) {
+			delete assignment1;
 			delete instance;
 		}//Deconstructor
-		static Assignment1 * GetInstance()
+		static CodeBase * GetInstance()
 	    {
 	        if (instance == NULL)
 	        {
-	            instance = new Assignment1();
+	            instance = new CodeBase();
 	        }
 	        return instance;
 	    }//GetInstance
@@ -29,11 +29,11 @@ class Assignment1 {
 		}
 };
 
-Assignment1 * Assignment1::instance = NULL;
+CodeBase * CodeBase::instance = NULL;
 
 int main() {
-	Assignment1 * codeBase;
-	codeBase = Assignment1::GetInstance();
+	CodeBase * codeBase;
+	codeBase = CodeBase::GetInstance();
 	try {
 		return codeBase->mainRoutine();
 	} catch(int e) {

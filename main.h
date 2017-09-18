@@ -2,7 +2,6 @@
 #define MAIN_H
 
 #include <iostream>
-
 #include "assignment.h"
 
 #endif
