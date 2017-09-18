@@ -7,6 +7,7 @@ public:
 	~Test(void);
 	static Test * instance;
 	static Test * GetInstance();
+	void saySomething();
 };
 
 #endif

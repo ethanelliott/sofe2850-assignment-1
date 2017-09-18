@@ -15,3 +15,7 @@ Test * Test::GetInstance() {
 	}
 	return instance;
 }
+
+void Test::saySomething() {
+	std::cout << "Hello World!" << std::endl;
+}

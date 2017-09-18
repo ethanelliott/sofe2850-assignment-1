@@ -27,21 +27,12 @@ class CodeBase {
 			}
 			return instance;
 		}//GetInstance
-		int mainRoutine() {
-			cout << "Hello World!" << endl;
+		int Main() {
+			test->saySomething();
 			return 0;
 		}
 };
 
 CodeBase * CodeBase::instance = NULL;
 
-int main() {
-	CodeBase * codeBase;
-	codeBase = CodeBase::GetInstance();
-	try {
-		return codeBase->mainRoutine();
-	} catch(int e) {
-		cout << "Error:\n" << e << endl;
-	}
-	return 0;
-}
+START_MAIN_CLASS(CodeBase);
