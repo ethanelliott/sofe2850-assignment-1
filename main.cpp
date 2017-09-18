@@ -4,15 +4,15 @@ using namespace std;
 
 class Assignment1 {
 	private:
-		CalculateThing *calcThing;
+		//CalculateThing *calcThing;
 		static Assignment1* instance;
 
 	public:
 		Assignment1(void) {
-			calcThing = CalculateThing::GetInstance();
+			//calcThing = CalculateThing::GetInstance();
 		}//Constructor
 		~Assignment1(void) {
-			delete calcThing;
+			//delete calcThing;
 			delete instance;
 		}//Deconstructor
 		static Assignment1* GetInstance()
@@ -24,7 +24,7 @@ class Assignment1 {
 	        return instance;
 	    }//GetInstance
 		int mainRoutine() {
-			cout << "Hello World!";
+			cout << "Hello World!" << endl;
 		}
 }
 
