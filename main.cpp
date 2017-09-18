@@ -5,7 +5,7 @@ using namespace std;
 class Assignment1 {
 	private:
 		//CalculateThing *calcThing;
-		static Assignment1* instance;
+		static Assignment1 * instance;
 
 	public:
 		Assignment1(void) {
@@ -15,7 +15,7 @@ class Assignment1 {
 			//delete calcThing;
 			delete instance;
 		}//Deconstructor
-		static Assignment1* GetInstance()
+		static Assignment1 * GetInstance()
 	    {
 	        if (instance == NULL)
 	        {
@@ -27,9 +27,9 @@ class Assignment1 {
 			cout << "Hello World!" << endl;
 			return 0;
 		}
-}
+};
 
-Assignment1* Assignment1::instance = NULL;
+Assignment1 * Assignment1::instance = NULL;
 
 int main() {
 	Assignment1 * codeBase;
