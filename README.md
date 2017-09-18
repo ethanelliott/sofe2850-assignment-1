@@ -1,3 +1,4 @@
 # SOFE2850 - Assignment 1
 
-[![Build Status](https://travis-ci.org/ethanelliott/sofe2850-assignment-1.svg?branch=master)](https://travis-ci.org/ethanelliott/sofe2850-assignment-1)
+[![Travis](https://img.shields.io/travis/ethanelliott/sofe2850-assignment-1.svg?style=flat-square)](https://github.com/ethanelliott/sofe2850-assignment-1)
+[![GitHub release](https://img.shields.io/github/release/ethanelliott/sofe2850-assignment-1.svg?style=flat-square)](https://github.com/ethanelliott/sofe2850-assignment-1)
