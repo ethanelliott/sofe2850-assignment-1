@@ -9,11 +9,11 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
     packages:
-      - gcc-6
-      - g++-6
+      - gcc
+      - g++
       - cmake
 script:
-  - export CC=/usr/bin/gcc-6
-  - export CXX=/usr/bin/g++-6
+  - export CC=/usr/bin/gcc
+  - export CXX=/usr/bin/g++
   - gcc -v && g++ -v && cmake --version
   - g++ main.cpp assignment.cpp
