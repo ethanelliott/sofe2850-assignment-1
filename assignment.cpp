@@ -11,7 +11,7 @@ Test::~Test(void) {
 
 Test * Test::GetInstance() {
 	if (instance == NULL) {
-        instance = new Test();
-    }
-    return instance;
+		instance = new Test();
+	}
+	return instance;
 }

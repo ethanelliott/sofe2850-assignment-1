@@ -21,14 +21,12 @@ class CodeBase {
 			delete test;
 			delete instance;
 		}//Deconstructor
-		static CodeBase * GetInstance()
-	    {
-	        if (instance == NULL)
-	        {
-	            instance = new CodeBase();
-	        }
-	        return instance;
-	    }//GetInstance
+		static CodeBase * GetInstance() {
+			if (instance == NULL) {
+				instance = new CodeBase();
+			}
+			return instance;
+		}//GetInstance
 		int mainRoutine() {
 			cout << "Hello World!" << endl;
 			return 0;
@@ -45,5 +43,5 @@ int main() {
 	} catch(int e) {
 		cout << "Error:\n" << e << endl;
 	}
-	return 1;
+	return 0;
 }
