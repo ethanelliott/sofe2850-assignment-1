@@ -1,18 +1,24 @@
+/*
+ *
+ *
+ *
+ */
+
 #include "main.h"
 
 using namespace std;
 
 class CodeBase {
 	private:
-		Assignment1 * assignment1;
+		Test * test;
 		static CodeBase * instance;
 
 	public:
 		CodeBase(void) {
-			assignment1 = Assignment1::GetInstance();
+			test = Test::GetInstance();
 		}//Constructor
 		~CodeBase(void) {
-			delete assignment1;
+			delete test;
 			delete instance;
 		}//Deconstructor
 		static CodeBase * GetInstance()

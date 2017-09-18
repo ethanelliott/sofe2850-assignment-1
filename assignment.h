@@ -1,14 +1,12 @@
 #ifndef ASSIGNMENT_H
 #define ASSIGNMENT_H
 
-
-class Assignment1 {
-private:
-	static Assignment1 * instance;
+class Test {
 public:
-	Assignment1(void);
-	~Assignment1(void);
-	static Assignment1* GetInstance();
+	Test(void);
+	~Test(void);
+	static Test * instance;
+	static Test * GetInstance();
 };
 
 #endif

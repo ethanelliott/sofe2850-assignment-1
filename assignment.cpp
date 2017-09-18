@@ -1,18 +1,17 @@
 #include "main.h"
 
-Assignment1 * Assignment1::instance = NULL;
+Test * Test::instance = NULL;
 
-Assignment1::Assignment1(void) {
+Test::Test(void) {
 }
 
-Assignment1::~Assignment1(void) {
+Test::~Test(void) {
 	delete instance;
 }
 
-Assignment1 * Assignment1::GetInstance() {
-	if (instance == NULL)
-    {
-        instance = new Assignment1();
+Test * Test::GetInstance() {
+	if (instance == NULL) {
+        instance = new Test();
     }
     return instance;
 }

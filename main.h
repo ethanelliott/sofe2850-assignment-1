@@ -4,4 +4,6 @@
 #include <iostream>
 #include "assignment.h"
 
+using namespace std;
+
 #endif
