@@ -6,14 +6,11 @@
 
 #define START_MAIN_CLASS(_ClassName_) \
 	_ClassName_ * _ClassName_::instance = NULL; \
-	int main() \
-	{ \
+	int main() { \
 		_ClassName_ *base =  _ClassName_::GetInstance(); \
-		try  \
-		{ \
+		try { \
 			throw(base->Main()); \
-		} \
-		catch(int e){ \
+		} catch(int e) { \
 			cout << "\nProgram returned " << e << "\n"; \
 			return e; \
 		} \

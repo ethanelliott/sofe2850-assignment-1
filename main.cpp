@@ -6,13 +6,10 @@
 
 #include "main.h"
 
-using namespace std;
-
 class CodeBase {
 	private:
 		Test * test;
 		static CodeBase * instance;
-
 	public:
 		CodeBase(void) {
 			test = Test::GetInstance();
